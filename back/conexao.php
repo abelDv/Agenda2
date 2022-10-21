@@ -8,7 +8,4 @@
     if (!$connection) {
         die("Houve um erro ao conectar o Banco de Dados!");
     }
-    else{
-        
-    }
 ?>
