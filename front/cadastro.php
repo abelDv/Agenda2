@@ -24,6 +24,11 @@
             </div>
 
             <div class="form-group">
+                <label for="inputName">Cargo</label>
+                <input type="text" class="form-control" id="cargo" placeholder="Entre com o nome do cargo" name="cargo" required>
+            </div>
+
+            <div class="form-group">
                 <label for="inputEmail">E-mail</label>
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Entre com seu e-mail" name="email" required>
             </div>
@@ -45,7 +50,9 @@
 
             <div class="form-group">
                 <button class="btn btn-primary" type="submit">Enviar</button>
+                <a href="../front/main/main.php" style='font-size: 20px;margin-left:20px;color:white;font-weight:bold'>Voltar ao menu</a>
             </div>
+
           </form>
     </main>
     <script>
