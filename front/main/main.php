@@ -1,5 +1,11 @@
 <?php
+
+/*if (isset($_SESSION['not_authentic']) == false) {
+  header("Location: ../../index.php");
+}*/
+
 session_start();
+
 //require "../../back/conexao.php";
 ?>
 

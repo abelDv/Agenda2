@@ -21,13 +21,11 @@ $result = mysqli_query($connection, $query);
 $row = mysqli_num_rows($result);
 
 if ($row >= 1) {
-    $_SESSION['email'] = $email;
-    $_SESSION['not_authentic'] = false;
-    session_name("sacID");
-    header('Location: ../../front/main/main.php');
-    exit(); 
+    $_SESSION["email"] = $email;
+    header("Location: http://localhost/atividades/20220803/front/main/main.php");
+    exit();
 } else{
-    $_SESSION['not_authentic'] = true;
+    $_SESSION["not_authentic"] = true;
     header("Location: ../../index.php");
 }
 
