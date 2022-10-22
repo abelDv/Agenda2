@@ -1,5 +1,6 @@
 <?php
 session_start();
+//require "../../back/conexao.php";
 ?>
 
 <!DOCTYPE html>
@@ -13,15 +14,6 @@ session_start();
         background-color:cornflowerblue;
         }
     .container {
-        /*display: flex;*/
-        /*align-items: center;*/
-        /*justify-content: center;*/
-        /*background-color: white;*/
-
-        /*box-shadow: 15px 15px 42px rgba(0, 0, 0, 0.1);
-        width: 1100px;
-        height: 700px;*/
-
         margin: 50px auto;
         border-radius: 4px;
         color:white;
@@ -30,7 +22,6 @@ session_start();
     a {text-decoration:none;}
     li {list-style-type: none;}
     ul > a {font-size:1.2em;}
-
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -51,7 +42,7 @@ session_start();
       <div id="collapse1" class="panel-collapse collapse in">
         <div class="panel-body">
             <li>
-                <ul><a href="#">Cadastrar Usuário</a></ul>
+                <ul><a href="../Cad/cadUser_f.php">Cadastrar Usuário</a></ul>
                 <ul><a href="#">Relação de Usuários - Ordem Alfabética</a></ul>
             </li>
         </div>
@@ -66,7 +57,7 @@ session_start();
       <div id="collapse2" class="panel-collapse collapse">
         <div class="panel-body">
         <li>
-            <ul><a href="#">Cadastrar Médico</a></ul>
+            <ul><a href="../Cad/cadMed_f.php">Cadastrar Médico</a></ul>
             <ul><a href="#">Relação de Médicos - Ordem Alfabética</a></ul>
         </li>
         </div>
@@ -81,7 +72,7 @@ session_start();
       <div id="collapse3" class="panel-collapse collapse">
         <div class="panel-body">
         <li>
-            <ul><a href="#">Cadastrar Cliente</a></ul>
+            <ul><a href="../Cad/cadClient_f.php">Cadastrar Cliente</a></ul>
             <ul><a href="#">Relação de Clientes - Ordem Alfabética</a></ul>
         </li>
         </div>

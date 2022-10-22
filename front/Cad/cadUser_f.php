@@ -1,3 +1,9 @@
+<?php
+//session_start();
+require "../../back/log/verificaLogin.php";
+//require "../../back/conexao.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,7 +20,7 @@
 </head>
 <body>
     <main style="padding: 1.5rem 1.5rem 0 1.5rem;display:flex">
-        <img class="mb-4" src="../images/professional.jpg" alt="" width="320" height="290">
+        <img class="mb-4" src="../../images/professional.jpg" alt="" width="320" height="290">
         <form style="padding: 1.5rem;" action="../back/user/cadUser.php" method="post" id="formClient">
             <h1>Cadastro de Usuários </h1>
             <h3> SAC (Sistema de Agendamento de Consultas)</h3>
@@ -49,8 +55,8 @@
             </div>
 
             <div class="form-group">
-                <button class="btn btn-primary" type="submit">Enviar</button>
-                <a href="../front/main/main.php" style='font-size: 20px;margin-left:20px;color:white;font-weight:bold'>Voltar ao menu</a>
+                <button class="btn btn-primary" type="submit" style="background-color:pink;color:black">Enviar</button>
+                <a href="../front/main/main.php" style="font-size: 20px;margin-left:20px;color:white;font-weight:bold">Voltar ao menu</a>
             </div>
 
           </form>

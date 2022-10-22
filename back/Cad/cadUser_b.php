@@ -1,6 +1,7 @@
 <?php
     session_start();
-    include("../conexao.php");
+    require("../conexao.php");
+    require ('../log/verificaLogin.php');
 
     $name=$_POST['name'];
     $email=$_POST['email'];
