@@ -56,7 +56,7 @@ require "../../back/log/verificaLogin.php";
 
             <div class="form-group">
                 <button class="btn btn-primary" type="submit" style="background-color:pink;color:black">Enviar</button>
-                <a href="../front/main/main.php" style="font-size: 20px;margin-left:20px;color:white;font-weight:bold">Voltar ao menu</a>
+                <a href="../main/main.php" style="font-size: 20px;margin-left:20px;color:white;font-weight:bold">Voltar ao menu</a>
             </div>
 
           </form>
