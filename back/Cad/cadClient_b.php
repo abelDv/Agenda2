@@ -11,7 +11,7 @@
     $num=$_POST['NUM'];
     $email=$_POST['email'];
     
-    $sql_insert = "INSERT INTO client (NOME, CPF, CELULAR, CEP, ENDEREÇO, NUMERO, email) 
+    $sql_insert = "INSERT INTO clientes (NOME, CPF, CELULAR, CEP, ENDEREÇO, NUMERO, email) 
     VALUES ('$name','$cpf','$celular','$cep','$endereco','$num','$email')";
 
     if(mysqli_query($connection, $sql_insert)){
