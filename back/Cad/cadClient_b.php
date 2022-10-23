@@ -9,14 +9,15 @@
     $endereco=$_POST['endereco'];
     $cpf=$_POST['CPF'];
     $num=$_POST['NUM'];
-
-    $sql_insert = "INSERT INTO client (NOME, CPF, CELULAR, CEP, ENDEREÇO, NUMERO) 
-    VALUES ('$name','$cpf','$celular','$cep','$endereco','$num')";
+    $email=$_POST['email'];
+    
+    $sql_insert = "INSERT INTO client (NOME, CPF, CELULAR, CEP, ENDEREÇO, NUMERO, email) 
+    VALUES ('$name','$cpf','$celular','$cep','$endereco','$num','$email')";
 
     if(mysqli_query($connection, $sql_insert)){
         echo "<script>
-                alert('Usuário Cadastrado com sucesso!');
-                window.location.replace('http://localhost/atividades/20220803/front/Cad/cadClient.php');
+                alert('Cliente Cadastrado com sucesso!');
+                window.location.replace('http://localhost/atividades/20220803/front/Cad/cadClient_f.php');
             </script>";
         exit;
     }

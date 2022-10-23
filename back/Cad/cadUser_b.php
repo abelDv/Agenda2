@@ -15,7 +15,7 @@
     if(mysqli_query($connection, $sql_insert)){
         echo "<script>
                 alert('Usuário Cadastrado com sucesso!');
-                window.location.replace('http://localhost/atividades/20220803/front/Cad/cadUser.php');
+                window.location.replace('http://localhost/atividades/20220803/front/Cad/cadUser_f.php');
             </script>";
         exit;
     }

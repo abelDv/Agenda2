@@ -16,22 +16,48 @@ require "../../back/log/verificaLogin.php";
         .form-group{margin-bottom: 15px;}
         label{font-weight: bold;}
     </style>
-    <title>Faça seu cadastro</title>
+    <title>Cadastro de Clientes</title>
 </head>
 <body>
     <main style="padding: 1.5rem 1.5rem 0 1.5rem;display:flex">
         <img class="mb-4" src="../../images/professional.jpg" alt="" width="320" height="290">
-        <form style="padding: 1.5rem;" action="../back/user/cadUser.php" method="post" id="formClient">
-            <h1>Cadastro de Usuários </h1>
+        <form style="padding: 1.5rem;" action="../../back/Cad/cadClient_b.php" method="post" id="formClient">
+            <h1>Cadastro de Clientes </h1>
             <h3> SAC (Sistema de Agendamento de Consultas)</h3>
             <div class="form-group">
                 <label for="inputName">Nome</label>
-                <input type="text" class="form-control" id="name" placeholder="Entre com o seu nome Completo" name="name" required>
+                <input type="text" class="form-control" id="name" placeholder="Entre com o nome do Cliente" name="name" required>
             </div>
 
             <div class="form-group">
-                <label for="inputName">Cargo</label>
-                <input type="text" class="form-control" id="cargo" placeholder="Entre com o nome do cargo" name="cargo" required>
+                <div class="row g-3" >
+                    <div class="col-md-6">
+                        <label for="inputCPF">CPF</label>
+                        <input type="text" class="form-control" id="CPF" aria-describedby="CPF" placeholder="Apenas números" name="CPF" maxlength="11" size="11" pattern="^[0-9]{11}" required autocomplete="off">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCel">Número do Celular</label>
+                        <input type="text" class="form-control" id="celular" aria-describedby="Celular" placeholder="Apenas números com DDD" name="celular" maxlength="11" size="11" pattern="^[0-9]{11}" required autocomplete="off">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row g-3" > 
+                    <div class="col-md-6">
+                        <label for="inputCEP">CEP (Apenas números)</label>
+                        <input type="text" class="form-control" id="CEP" aria-describedby="CEP" placeholder="Informe apenas números" name="CEP" maxlength="8" size="8" pattern="^[0-9]{8}" required autocomplete="off">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputNumero">Número da residência</label>
+                        <input type="text" class="form-control" id="NUM" aria-describedby="NUM" placeholder="Informe o Número" name="NUM" required autocomplete="off">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputEndereco">Endereço</label>
+                <input type="text" class="form-control" id="endereco" placeholder="Informe o endereço sem o número da residência" name="endereco" required>
             </div>
 
             <div class="form-group">
@@ -40,25 +66,9 @@ require "../../back/log/verificaLogin.php";
             </div>
 
             <div class="form-group">
-                <label for="inputCPF">CPF</label>
-                <input type="text" class="form-control" id="CPF" aria-describedby="CPF" placeholder="Entre com número do seu CPF" name="CPF" maxlength="11" size="11" pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}" required autocomplete="off">
-            </div>
-
-            <div class="form-group">
-                <label for="inputpass">Senha</label>
-                <input type="password" class="form-control" id="pass" placeholder="Entre com sua senha" name="pass" required>
-            </div>
-
-            <div class="form-group">
-              <label for="passRepeat">Repita sua senha</label>
-              <input type="password" class="form-control" id="repeatPass" placeholder="Repita sua senha aqui" required>
-            </div>
-
-            <div class="form-group">
                 <button class="btn btn-primary" type="submit" style="background-color:pink;color:black">Enviar</button>
                 <a href="../main/main.php" style="font-size: 20px;margin-left:20px;color:white;font-weight:bold">Voltar ao menu</a>
             </div>
-
           </form>
     </main>
     <script>

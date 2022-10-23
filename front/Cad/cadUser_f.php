@@ -16,12 +16,12 @@ require "../../back/log/verificaLogin.php";
         .form-group{margin-bottom: 15px;}
         label{font-weight: bold;}
     </style>
-    <title>Faça seu cadastro</title>
+    <title>Cadastro de Usuários</title>
 </head>
 <body>
     <main style="padding: 1.5rem 1.5rem 0 1.5rem;display:flex">
         <img class="mb-4" src="../../images/professional.jpg" alt="" width="320" height="290">
-        <form style="padding: 1.5rem;" action="../back/user/cadUser.php" method="post" id="formClient">
+        <form style="padding: 1.5rem;" action="../../back/Cad/cadUser_b.php" method="post" id="formClient">
             <h1>Cadastro de Usuários </h1>
             <h3> SAC (Sistema de Agendamento de Consultas)</h3>
             <div class="form-group">
