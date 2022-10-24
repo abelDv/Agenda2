@@ -125,7 +125,7 @@ session_start();
         ?>
 
         <div class="form-floating" style="margin-top: 20px;">
-          <a href="./front/cadastro.php" style="font-size: 18px; font-weight: bold; color:white;">Não tem cadastro? Clique e faça agora mesmo!</a>
+          <a href="#" style="font-size: 18px; font-weight: bold; color:white;">Esqueceu sua senha?</a>
         </div>
 
         <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
