@@ -14,11 +14,9 @@
         .form-group{margin-bottom: 15px;}
         label{font-weight: bold;}
     </style>
-    <title>Relatório de Usuários</title>
+    <title>Relação de Agendamentos</title>
 </head>
 <body>
-    
-    
     <main style="padding: 1.5rem 1.5rem 0 1.5rem">
     <img class="mb-4" src="../../images/professional.jpg" alt="" width="120" height="100">
 
@@ -31,11 +29,11 @@
         <table class="table table-bordered">
             <thead>
                 <tr> 
-                    <th scope="col">Código</th>
-                    <th scope="col">Médico</th>
-                    <th scope="col">Cliente</th>
-                    <th scope="col">Data</th>
-                    <th scope="col">Horário</th>
+                    <th scope="col">CÓDIGO</th>
+                    <th scope="col">MÉDICO</th>
+                    <th scope="col">CLIENTE</th>
+                    <th scope="col">DATA</th>
+                    <th scope="col">HORÁRIO</th>
                 </tr>
             <thead>
                 <?php while($dadoAgend = $conAgenda->fetch_array()) { ?>

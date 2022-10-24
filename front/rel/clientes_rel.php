@@ -14,7 +14,7 @@
         .form-group{margin-bottom: 15px;}
         label{font-weight: bold;}
     </style>
-    <title>Relatório de Usuários</title>
+    <title>Relação de Clientes</title>
 </head>
 <body>
     <main style="padding: 1.5rem 1.5rem 0 1.5rem">
@@ -32,8 +32,8 @@
                     <th scope="col">Código</th>
                     <th scope="col">NOME</th>
                     <th scope="col">CPF</th>
-                    <th scope="col">Tel Celular</th>
-                    <th scope="col">Endereço</th>
+                    <th scope="col">TEL CELULAR</th>
+                    <th scope="col">ENDEREÇO</th>
                     <th scope="col">Nº</th>
                     <th scope="col">CEP</th>
                     <th scope="col">E-MAIL</th>

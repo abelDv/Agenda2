@@ -49,7 +49,7 @@ session_start();
         <div class="panel-body">
             <li>
                 <ul><a href="../Cad/cadUser_f.php">Cadastrar Usuário</a></ul>
-                <ul><a href="#">Relação de Usuários - Ordem Alfabética</a></ul>
+                <ul><a href="../rel/usuarios_rel.php">Relação de Usuários - Ordem Alfabética</a></ul>
             </li>
         </div>
       </div>
@@ -64,7 +64,7 @@ session_start();
         <div class="panel-body">
         <li>
             <ul><a href="../Cad/cadMed_f.php">Cadastrar Médico</a></ul>
-            <ul><a href="#">Relação de Médicos - Ordem Alfabética</a></ul>
+            <ul><a href="../rel/medicos_rel.php">Relação de Médicos - Ordem Alfabética</a></ul>
         </li>
         </div>
       </div>
