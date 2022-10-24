@@ -1,9 +1,9 @@
 <?php
 
-    require ("http://localhost/atividades/20220803/back/conexao.php");
+    require "../../back/conexao.php";
 
     $consulta = "SELECT id, NOME FROM clientes";
 
-    $con = mysqli_query($connection, $consulta);
+    $conClientes = mysqli_query($connection, $consulta);
 
 ?>

@@ -1,8 +1,7 @@
 <?php
-//session_start();
-require "../../back/log/verificaLogin.php";
-require "../../back/list/listMedicos.php";
-//require "../../back/conexao.php";
+    require "../../back/list/listMedicos.php";
+    require "../../back/list/listClientes.php";
+    require "../../back/log/verificaLogin.php";
 ?>
 
 <!DOCTYPE html>
@@ -22,23 +21,26 @@ require "../../back/list/listMedicos.php";
 <body>
     <main style="padding: 1.5rem 1.5rem 0 1.5rem;display:flex">
         <img class="mb-4" src="../../images/professional.jpg" alt="" width="320" height="290">
-        <form style="padding: 1.5rem;" action="../../back/Cad/cadUser_b.php" method="post" id="formClient">
+        <form style="padding: 1.5rem;" action="../../back/Cad/cadAgenda_b.php" method="post" id="formClient">
             <h1>Cadastro de Agendamentos</h1>
             <h3> SAC (Sistema de Agendamento de Consultas)</h3>
 
             <div class="form-group">
-                <label for="inputCliente">Cliente</label>
-                <select class="form-control" id="name" name="name" required>
-                    <option selected>Selecione o Cliente</option>
-                    <?php while($dado = $con->fetch_array()) { ?>
-                        <option value="<?php echo $dado['id'];?>"><?php echo $dado['NOME'];?></option>
+                <label for="inputMedico">Médico</label>
+                <select class="form-control" id="Medico" name="Medico" required>
+                    <?php while($dadoMed = $conMedicos->fetch_array()) { ?>
+                        <option value="<?php echo $dadoMed['id'];?>"><?php echo $dadoMed['NOME'];?></option>
                     <?php } ?>
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="inputMedico">Médico</label>
-                <input type="text" class="form-control" id="cargo" name="cargo" required>
+                <label for="inputCliente">Cliente</label>
+                <select class="form-control" id="Cliente" name="Cliente" required>
+                    <?php while($dadoCli = $conClientes->fetch_array()) { ?>
+                        <option value="<?php echo $dadoCli['id'];?>"><?php echo $dadoCli['NOME'];?></option>
+                    <?php } ?>
+                </select>
             </div>
 
             <div class="form-group">
