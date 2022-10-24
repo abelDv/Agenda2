@@ -35,7 +35,7 @@ session_start();
 <body>
 
 <div class="container">
-  <h2 style="font-weight: bold;; text-align:center;">SAC - Sistema de Agendamento de Consultas</h2>
+  <h2 style="font-weight: bold;; text-align:center;">SAC - Sistema de Agendamento de Consultas Médicas</h2>
   <p>Escolha abaixo uma das opções para utilizar o sistema.</p>
   <p>Caso tenha terminado de utilizar o sistema, clique no botão "SAIR".</p>
   <div class="panel-group" id="accordion">

@@ -101,8 +101,9 @@ session_start();
     
     <main class="form-signin w-100 m-auto">
       <form action="./back/log/loginFunc.php" method="POST">
-        <img class="mb-4" src="./images/professional.jpg" alt="logo_Clinica" width="300" height="270">
-        <h1 class="h3 mb-3 fw-normal" style="font-weight: bold; color:white;">Faça o seu login</h1>
+        <img class="mb-2" src="./images/professional.jpg" alt="logo_Clinica" width="300" height="270">
+        <h2 class="h5 mb-4 fw-normal" style="font-weight: bold; color:white;">SAC - Sistema de Agendamento de Consultas Médicas</h2>
+        <h3 class="h6 mb-2 fw-normal" style="font-weight: bold; color:white;">Faça o seu login</h3>
 
         <div class="form-floating">
           <input type="email" class="form-control" id="floatingInput" aria-describedby="emailHelp" placeholder="E-mail" name="email">
