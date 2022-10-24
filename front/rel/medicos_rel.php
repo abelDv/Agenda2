@@ -1,5 +1,6 @@
 <?php
     require "../../back/list/listMedicos.php";
+    require "../../back/log/verificaLogin.php";
 ?>
 
 <!DOCTYPE html>

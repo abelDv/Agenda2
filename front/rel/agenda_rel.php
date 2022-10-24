@@ -1,5 +1,6 @@
 <?php
     require "../../back/list/listAgendamentos.php";
+    require "../../back/log/verificaLogin.php";
 ?>
 
 <!DOCTYPE html>
