@@ -2,7 +2,7 @@
 
     require "../../back/conexao.php";
 
-    $consulta = "SELECT id, NOME FROM clientes";
+    $consulta = "SELECT * FROM clientes ORDER BY NOME";
 
     $conClientes = mysqli_query($connection, $consulta);
 

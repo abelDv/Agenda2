@@ -16,7 +16,7 @@
         .form-group{margin-bottom: 15px;}
         label{font-weight: bold;}
     </style>
-    <title>Cadastro de Usuários</title>
+    <title>Cadastro de Agendamentos</title>
 </head>
 <body>
     <main style="padding: 1.5rem 1.5rem 0 1.5rem;display:flex">

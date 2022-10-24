@@ -79,7 +79,7 @@ session_start();
         <div class="panel-body">
         <li>
             <ul><a href="../Cad/cadClient_f.php">Cadastrar Cliente</a></ul>
-            <ul><a href="#">Relação de Clientes - Ordem Alfabética</a></ul>
+            <ul><a href="../rel/clientes_rel.php">Relação de Clientes - Ordem Alfabética</a></ul>
         </li>
         </div>
       </div>
@@ -94,7 +94,7 @@ session_start();
         <div class="panel-body">
         <li>
             <ul><a href="../Cad/cadAgenda_f.php">Agendar Consulta</a></ul>
-            <ul><a href="#">Relação de Consultas - Ordem crescente de data</a></ul>
+            <ul><a href="../rel/agenda_rel.php">Relação de Consultas - Ordem crescente de data</a></ul>
         </li> 
         </div>
       </div>

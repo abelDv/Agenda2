@@ -2,7 +2,7 @@
 
     require "../../back/conexao.php";
 
-    $consulta = "SELECT id, NOME FROM medicos";
+    $consulta = "SELECT * FROM medicos";
 
     $conMedicos = mysqli_query($connection, $consulta);
 ?>
