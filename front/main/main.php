@@ -45,7 +45,7 @@ session_start();
           <a id="menu" data-toggle="collapse" data-parent="#accordion" href="#collapse1">Usuários</a>
         </h4>
       </div>
-      <div id="collapse1" class="panel-collapse collapse in">
+      <div id="collapse1" class="panel-collapse collapse">
         <div class="panel-body">
             <li>
                 <ul><a href="../Cad/cadUser_f.php">Cadastrar Usuário</a></ul>
