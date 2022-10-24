@@ -93,9 +93,9 @@ session_start();
       <div id="collapse4" class="panel-collapse collapse">
         <div class="panel-body">
         <li>
-            <ul><a href="#">Agendar Consulta</a></ul>
+            <ul><a href="../Cad/cadAgenda_f.php">Agendar Consulta</a></ul>
             <ul><a href="#">Relação de Consultas - Ordem crescente de data</a></ul>
-        </li>
+        </li> 
         </div>
       </div>
     </div>
